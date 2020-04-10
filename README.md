@@ -17,14 +17,14 @@ Resources/Technologies
 
 ### Screenshots
 <h1 align="center">
-  <img src="https://i.imgur.com/xM1SUDM.png">
+  <img src="https://i.imgur.com/xM1SUDM.png" width="50%" height="50%">
 </h1>
 <h1 align="center">
-  <img src="https://i.imgur.com/aeIV1P7.png">
+  <img src="https://i.imgur.com/aeIV1P7.png" width="50%" height="50%">
 </h1>
 <h1 align="center">
-  <img src="https://i.imgur.com/h0C8iVm.png">
+  <img src="https://i.imgur.com/h0C8iVm.png" width="50%" height="50%">
 </h1>
 <h1 align="center">
-  <img src="https://i.imgur.com/96oAFgV.png">
+  <img src="https://i.imgur.com/96oAFgV.png" width="50%" height="50%">
 </h1>
