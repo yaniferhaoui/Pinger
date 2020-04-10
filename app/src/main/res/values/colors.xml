@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="toolbar">#535a54</color>
+
+    <color name="text_button">#e3e3e6</color>
+    <color name="text_button_block">#c4c2c2</color>
+    <color name="background">#e3e3e6</color>
+    <color name="background_button">#5372b6</color>
+    <color name="background_button_block">#8a8a8a</color>
+    <color name="background_button_red">#c53e3e</color>
+
+    <color name="background_server">#c0c2c6</color>
+    <color name="background_server_selected">#adaeaf</color>
+
+    <color name="online">#389549</color>
+    <color name="offline">#9c1a1a</color>
+</resources>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/insert_server">
+
+
+
+    <!-- HEADER -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbar"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adding Server"
+            android:textColor="@color/text_button"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+
+    <!-- BODY -->
+    <ScrollView
+        android:id="@+id/scroll_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:showDividers="middle"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/name_title"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="Name"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/name_input"
+                    android:hint="example"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ip"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/ip_title"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="IP"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/ip_input"
+                    android:hint="example.fr/192.168.0.1"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ip_mac"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/ip_mac_title"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="IPMAC"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/ip_mac_input"
+                    android:hint="00:00:00:00:00:00 (optional)"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/external_port"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/external_port_title"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="External Port"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/external_port_input"
+                    android:hint="9 (optional)"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/internal_port"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/internal_port_title"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="Internal Port"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/internal_port_input"
+                    android:hint="9 (optional)"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/spinner_public"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/spinner_public_title"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="Public Network"
+                    android:gravity="center_vertical"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_public_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@+id/yes"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="50dp"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="No" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/expiry_date"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+
+                <TextView
+                    android:id="@+id/expiry_date_title"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20dp"
+                    android:text="Expiry Date"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/date_edit"
+                    android:hint="Enter Date"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="number"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- FOOTER -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/toolbar">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/background_button_red"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/text_button"/>
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/text_button"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

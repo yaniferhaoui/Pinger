@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pinger</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_public">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>
